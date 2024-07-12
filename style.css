@@ -15,6 +15,7 @@ h1 {
 
 #mainContainer {
     display: grid;
+    position: relative;
     grid-template-columns: 75% 25%;
     height: 80vh;
     z-index: 2;
@@ -22,6 +23,7 @@ h1 {
 
 #mapContainer {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -35,7 +37,7 @@ h1 {
 #map {
     width: 1024px;
     height: 768px; 
-    background: url("/US States Guessing Game/images/blank_states_img.gif") no-repeat center center;
+    background: url("images/blank_states_img.gif") no-repeat center center;
     background-size: cover; /* ensures image fits without distorting */
     position: relative;
     border: 1px solid black;
@@ -53,6 +55,7 @@ h1 {
 
 #infoBox {
     display: grid;
+    position: relative;
     grid-template-rows: 10% 90%;
     z-index: 2;
     background: repeating-linear-gradient( 
