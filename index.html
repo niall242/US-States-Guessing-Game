@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US States Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>US States Guessing Game</h1>
+    
+    <div id="mainContainer">
+        <div id="mapContainer">
+            <div id="map"></div>
+        </div>
+        <div id="infoBox">
+            <div id="fyiBox">
+                <h2>FYI</h2>
+                <div id="fyi"></div>
+            </div>
+            <div class="infoContent">
+                <div>
+                    <div>Population Rank</div>
+                    <div id="popRank"></div>
+                </div>
+                <div>
+                    <div>Economy Rank</div>
+                    <div id="ecoRank"></div>
+                </div>
+                <div id="weather">Weather</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="guessArea">
+            <form class="form" id="guessForm">
+                Guess a US State Below 👇
+                <br>
+                <input type="text" name="stateInput" id="stateInput">
+                <button type="submit" id="guessSubmit">Submit</button>
+            </form>
+        </div>
+        <div class="giveUp">
+            <p>That's all I know!</p>
+            <button class="giveUpButton">Give Up</button>
+        </div>
+        <div class="guessCounter">
+            <div>Guesses Left: <span id="guessesLeft">50</span></div>
+            <div class="guessGrid" id="guessGrid">
+                <!-- grid boxes get added here -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
