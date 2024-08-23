@@ -29,6 +29,7 @@ function endGame() {
     giveUpButton.disabled = true;
     popRank.innerText = ""
     ecoRank.innerText = ""
+    weather.innerText = ""
 
     fyi.innerText = `Game Over! You got ${score}/50 states correct`;
 }
